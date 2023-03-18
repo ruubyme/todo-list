@@ -52,3 +52,12 @@ function addTodoEnter(e) {
 
 btn.addEventListener("click", addTodo);
 add.addEventListener("keydown", addTodoEnter);
+
+/**edit 이벤트 */
+function editTodo(e) {
+  const editList = e.target.parentElement;
+  const newContent = prompt("수정할 내용을 입력하세요."); //alter창에서 입력받은 값 가져오기
+  if (newContent !== null) {
+    editList.childNodes[0].nodeValue = newContent;
+  }
+}
