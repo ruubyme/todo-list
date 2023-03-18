@@ -1,0 +1,16 @@
+body {
+  background-color: #aec2b6;
+}
+
+.title {
+  color: #2e4f4f;
+}
+
+h2 {
+  color: #2e4f4f;
+}
+
+.complete {
+  color: #94af9f;
+  text-decoration: line-through;
+}
