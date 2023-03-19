@@ -61,3 +61,9 @@ function editTodo(e) {
     editList.childNodes[0].nodeValue = newContent;
   }
 }
+
+/**todo 삭제 버튼 이벤트 */
+function delTodo(e) {
+  const delList = e.target.parentElement;
+  delList.remove();
+}
