@@ -67,3 +67,11 @@ function delTodo(e) {
   const delList = e.target.parentElement;
   delList.remove();
 }
+
+/**todo 완료 버튼 이벤트 */
+function completeTodo(e) {
+  const completeList = e.target.parentElement;
+  completeList.children[2].remove(); //complete 완료 버튼 삭제
+  clearItem.appendChild(completeList); //list를 clearItem에 추가
+  clearItem.classList.add("complete");
+}
